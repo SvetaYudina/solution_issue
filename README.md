@@ -1,4 +1,4 @@
-Решение можно проверять онлайн. Для этого достаточно открыть файл jupyter-ноутбука в этом репозитории.
+Решение можно проверять онлайн. Для этого достаточно открыть файл solution_issue.ipynb в этом репозитории.
 
 ### Локальный запуск нотбука.
 
@@ -31,14 +31,16 @@ $ python3 -m pip install -r requirements.txt
 5. Запустите ноутбук
 
 ```console
-jupyter notebook solution_issue.ipynb
+$ jupyter notebook solution_issue.ipynb
 ```
 
-#### Загрузка данных в PostgreSQL
+#### База данных
 
-Для тестирования использовалась база данных "issue_info" в neon.tech, пароль: 0OgVob4ivdXE
+Для тестирования использовался ресурс neon.tech, предоставивший базу данных PostgreSQL.
+
 Для загрузки данных в базу данных использовалась следующая команда:
 
 ```console
-psql -d issue_info -h ep-sweet-mode-273478.us-east-2.aws.neon.tech -U guest -c "\copy test from 'data.csv' DELIMITER ';' HEADER csv"
+$ psql -d issue_info -h ep-sweet-mode-273478.us-east-2.aws.neon.tech -U guest -c "\copy test from 'data.csv' DELIMITER ';' HEADER csv"
 ```
+Пароль: 0OgVob4ivdXE
