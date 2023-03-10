@@ -1,0 +1,2 @@
+notebook==6.5.3
+ipython-sql==0.5.0
